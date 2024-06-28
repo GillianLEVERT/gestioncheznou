@@ -3,6 +3,8 @@ import { Metadata } from "next";
 
 import { Providers } from "./providers";
 
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -24,8 +26,12 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <head />
-      <body className="brown-light">
-        <Providers>{children}</Providers>
+      <body className="brown-light bg-slate-100">
+        <Providers>
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
