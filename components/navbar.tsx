@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import {
   Navbar as NextUINavbar,
-  NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
@@ -11,64 +10,67 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import Link from "next/link";
-import Image from "next/image";
 
-import logo from "@/app/assets/logo.png";
+type MenuItem = {
+  name: string;
+  href: string;
+};
 
-export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+export const Navbar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+  const handleMenuChange = (isOpen: boolean): void => {
+    setIsMenuOpen(isOpen);
+  };
+
+  const menuItems: MenuItem[] = [
+    { name: "Accueil", href: "#accueil" },
+    { name: "A propos", href: "#about" },
+    { name: "Service", href: "#service" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
     <NextUINavbar
-      className="bg-primary-500 text-black"
-      onMenuOpenChange={setIsMenuOpen}
+      className=" bg-primary text-black"
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={handleMenuChange}
     >
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <NavbarBrand className="">
-          <Image alt="logo" height={100} src={logo} width={100} />
-        </NavbarBrand>
+        <NavbarItem>
+          <Link className="hidden sm:flex" color="page" href="#accueil">
+            Accueil
+          </Link>
+        </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-6" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Features
+          <Link color="page" href="#about">
+            A propos
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link aria-current="page" href="#">
-            Customers
+          <Link aria-current="page" href="#service">
+            Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
+          <Link color="page" href="#contact">
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="bg-primary-500 font-semibold gap-y-2 list-disc list-inside">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link
-              className="w-full"
+              className="w-full "
               color={
                 index === 2
                   ? "primary"
@@ -76,9 +78,10 @@ export const Navbar = () => {
                     ? "danger"
                     : "foreground"
               }
-              href="#"
+              href={item.href}
+              onClick={() => handleMenuChange(false)}
             >
-              {item}
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
