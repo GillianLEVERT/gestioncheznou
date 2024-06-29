@@ -16,7 +16,7 @@ type MenuItem = {
   href: string;
 };
 
-export const Navbar: React.FC = () => {
+export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuChange = (isOpen: boolean): void => {
@@ -42,27 +42,24 @@ export const Navbar: React.FC = () => {
           className="sm:hidden"
         />
         <NavbarItem>
-          <Link className="hidden sm:flex" color="page" href="#accueil">
+          <Link className="hidden sm:flex font-semibold text-xl" href="/">
             Accueil
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-6" justify="center">
+      <NavbarContent
+        className="hidden sm:flex gap-8 font-medium"
+        justify="center"
+      >
         <NavbarItem>
-          <Link color="page" href="#about">
-            A propos
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link aria-current="page" href="#service">
-            Services
-          </Link>
+          <Link href="#about">A propos</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="page" href="#contact">
-            Contact
-          </Link>
+          <Link href="#service">Services</Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="#contact">Contact</Link>
         </NavbarItem>
       </NavbarContent>
 
