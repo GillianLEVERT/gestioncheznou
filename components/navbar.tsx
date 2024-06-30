@@ -10,6 +10,7 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import Link from "next/link";
+import { FaHome } from "react-icons/fa";
 
 type MenuItem = {
   name: string;
@@ -32,7 +33,7 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      className=" bg-transparent text-black"
+      className="bg-transparent blur-background  text-black"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={handleMenuChange}
     >
@@ -42,8 +43,12 @@ export const Navbar = () => {
           className="sm:hidden"
         />
         <NavbarItem>
-          <Link className="hidden sm:flex font-semibold text-xl" href="/">
-            Accueil
+          <Link
+            className="hidden sm:flex font-semibold text-2xl"
+            href="/"
+            title="Accueil"
+          >
+            <FaHome />
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -63,7 +68,7 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="bg-primary-500 font-semibold gap-y-2 list-disc list-inside">
+      <NavbarMenu className="bg-gray-300 noise font-semibold gap-y-2 list-disc list-inside">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link

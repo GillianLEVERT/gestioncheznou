@@ -23,8 +23,8 @@ export default function Home() {
       </div> */}
 
       {/* Contenu principal */}
-      <div className="relative z-10">
-        <section className="mx-4 lg:mx-[80px] xl:mx-[160px] 2xl:mx-[320px]">
+      <div className="bg-gray-300 noise ">
+        <section className="mx-4 lg:mx-[80px] xl:mx-[160px] 2xl:mx-[320px] ">
           <Hero />
           <About />
           <Service />

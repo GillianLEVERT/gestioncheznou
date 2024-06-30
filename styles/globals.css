@@ -4,5 +4,16 @@
 
 body {
     color: black;
+    
 }
 
+.noise {
+    background-image: url(../app/assets/noise5.jpg);
+
+}
+
+.blur-background {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
