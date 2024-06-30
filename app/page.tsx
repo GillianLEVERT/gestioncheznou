@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       {/* Grille de fond */}
-      <div className="fixed inset-0 grid grid-cols-12 gap-x-1 sm:gap-x-3 lg:gap-x-4 xl:gap-x-6 mx-6 lg:mx-[80px] xl:mx-[160px] 2xl:mx-[320px] opacity-20 z-0 pointer-events-none">
+      {/* <div className="fixed inset-0 grid grid-cols-12 gap-x-1 sm:gap-x-3 lg:gap-x-4 xl:gap-x-6 mx-6 lg:mx-[80px] xl:mx-[160px] 2xl:mx-[320px] opacity-20 z-0 pointer-events-none">
         <div className="bg-red-200">.</div>
         <div className="bg-red-200">.</div>
         <div className="bg-red-200">.</div>
@@ -20,11 +20,11 @@ export default function Home() {
         <div className="bg-red-200">:</div>
         <div className="bg-red-200">:</div>
         <div className="bg-red-200">:</div>
-      </div>
+      </div> */}
 
       {/* Contenu principal */}
       <div className="relative z-10">
-        <section className="mx-6 lg:mx-[80px] xl:mx-[160px] 2xl:mx-[320px]">
+        <section className="mx-4 lg:mx-[80px] xl:mx-[160px] 2xl:mx-[320px]">
           <Hero />
           <About />
           <Service />

@@ -4,11 +4,11 @@ import logo from "@/app/assets/logo.png";
 
 export const Hero = () => {
   return (
-    <section className="h-[500px] flex items-center" id="hero">
-      <div className="w-full bg-primary-400 xl:h-[420px] rounded-[40px] flex items-center">
+    <section className="h-[800px] md:h-[500px] flex items-center" id="hero">
+      <div className="w-full mx-2 bg-primary-400 rounded-[40px] flex flex-col md:flex-row items-center">
         <Image
           alt="logo"
-          className="rounded-[40px]"
+          className="rounded-[40px] scale-105"
           height={450}
           src={logo}
           width={450}

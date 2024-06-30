@@ -32,7 +32,7 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      className=" bg-primary text-black"
+      className=" bg-transparent text-black"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={handleMenuChange}
     >
