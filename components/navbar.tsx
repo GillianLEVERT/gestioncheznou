@@ -9,7 +9,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-import Link from "next/link";
+import { Link } from "@nextui-org/link";
 import { FaHome } from "react-icons/fa";
 
 type MenuItem = {
@@ -44,7 +44,7 @@ export const Navbar = () => {
         />
         <NavbarItem>
           <Link
-            className="hidden sm:flex font-semibold text-2xl"
+            className="hidden sm:flex font-semibold text-2xl text-black"
             href="/"
             title="Accueil"
           >
@@ -58,13 +58,19 @@ export const Navbar = () => {
         justify="center"
       >
         <NavbarItem>
-          <Link href="#about">A propos</Link>
+          <Link className="text-black" href="#about">
+            A propos
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#service">Services</Link>
+          <Link className="text-black" href="#service">
+            Services
+          </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#contact">Contact</Link>
+          <Link className="text-black" href="#contact">
+            Contact
+          </Link>
         </NavbarItem>
       </NavbarContent>
 
