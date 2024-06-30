@@ -4,31 +4,49 @@ import { ServiceCard } from "./card";
 
 const services = [
   {
-    title: "GESTION COMMERCIALE",
-    description: "Création de sites web modernes et réactifs.",
+    title: "Gestion Commerciale",
+    descriptionPoints: [
+      "Saisie et suivi des commandes commerciales",
+      "Facturation et devis",
+      "Gestion des achats auprès des fournisseurs",
+      "Gestion du planning",
+    ],
   },
   {
-    title: "GESTION ADMINISTRATIVE",
-    description: "Conception d'interfaces utilisateur intuitives.",
+    title: "Gestion Administrative",
+    descriptionPoints: [
+      "Gestion du courrier et des mails",
+      "Gestion des appels téléphoniques entrants et sortants",
+      "Rédaction de documents administratifs",
+      "Suivi clients",
+      "Numérisation et archivage",
+    ],
   },
   {
-    title: "GESTION FINANCIERE",
-    description: "Optimisation pour les moteurs de recherche.",
+    title: "Gestion Financière",
+    descriptionPoints: [
+      "Suivi des règlements clients et fournisseurs",
+      "Relance des factures impayées",
+      "Pointage et rapprochement bancaire",
+    ],
   },
   {
-    title: "ECHANGE AVEC LE CABINET COMPTABLE",
-    description: "Support technique et mises à jour régulières.",
+    title: "Echange avec le cabinet comptable",
+    descriptionPoints: ["Préparation des documents à transmettre"],
   },
 ];
 
 export const Service = () => {
   return (
-    <section className="relative h-screen justify-center" id="service">
+    <section
+      className="relative md:h-screen h-full justify-center"
+      id="service"
+    >
       <div className="absolute w-screen left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] h-full">
         <Image
           fill
           alt="service"
-          className="opacity-30"
+          className="opacity-50 hidden md:flex"
           sizes="100vw"
           src="/service.jpg"
           style={{
@@ -37,16 +55,19 @@ export const Service = () => {
         />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
+      <div className="relative z-10 w-full max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
         <h1 className="text-4xl font-bold text-center mb-8 mt-20">
           Mes Services.
         </h1>
+        <div className="flex justify-center items-center">
+          <div className="border-t-8 border-gray-500 w-36" />
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 2xl:gap-16 mt-20">
           {services.map((service, index) => (
             <ServiceCard
               key={index}
-              description={service.description}
+              descriptionPoints={service.descriptionPoints}
               title={service.title}
             />
           ))}
