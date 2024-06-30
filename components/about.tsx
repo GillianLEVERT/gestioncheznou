@@ -1,64 +1,50 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-
-import Herobg from "@/app/assets/hero-bg.jpg";
 
 export const About = () => {
   return (
-    <section className="h-[1000px] mt-20" id="about">
+    <section className="h-screen xl:h-[1000px] mt-20" id="about">
+      <div className="flex justify-center items-center xl:mb-60 mb-20">
+        <div className="border-t-2 border-gray-500 w-1/2 " />
+      </div>
       <div className="py-6 sm:py-8 lg:py-12">
         <div className="px-4 md:px-8">
           <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
-            {/* Contenu textuel */}
             <div className="md:pt-8">
-              <p className="text-center font-bold text-indigo-500 md:text-left">
-                Who we are
-              </p>
-
-              <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
-                Our competitive advantage
+              <h1 className="mb-4 text-center text-2xl 2xl:text-4xl font-bold text-[#345995] sm:text-3xl md:mb-6 md:text-left">
+                Qui-suis-je ?
               </h1>
 
-              <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-                This is a section of some simple filler text, also known as
-                placeholder text. It shares some characteristics of a real
-                written text but is random or otherwise generated. It may be
-                used to display a sample of fonts or generate text for testing.
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
-                <br />
-                <br />
-                This is a section of some simple filler text, also known as
-                placeholder text. It shares some characteristics of a real
-                written text but is or otherwise generated. It may be used to
-                display a sample of fonts or generate text for testing. Filler
-                text is dummy text which has no meaning however looks very
-                similar to real text.
-              </p>
-
-              <h2 className="mb-2 text-center text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4 md:text-left">
-                About us
-              </h2>
-
-              <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-                This is a section of some simple filler text, also known as
-                placeholder text. It shares some characteristics of a real
-                written text but is random or otherwise generated. It may be
-                used to display a sample of fonts or generate text for testing.
-                Filler text is dummy text which has no meaning however looks
-                very similar to real text.
-              </p>
+              <div className="mb-6  sm:text-lg   2xl:text-2xl md:mb-8">
+                <p>
+                  J'ai créé ma micro-entreprise en juin 2023. Mais avant, j'ai
+                  occupé un poste de chargée de recouvrement et facturière
+                  pendant 7 ans dans une société de BTP.
+                </p>
+                <p>
+                  J'ai ensuite évoluée en tant qu'assistante commerciale au sein
+                  de cette entreprise pendant 5 ans. Ces postes m'ont permis
+                  d'acquérir diverses compétences telles que la polyvalence, la
+                  relation clientèle, la gestion commerciale et biens d'autres.
+                  Mon objectif est de vous aider à gérer vos tâches
+                  administratives afin que vous puissiez vous concentrer sur
+                </p>
+                <p>
+                  votre métier. Je suis à la recherche de nouvelles
+                  collaborations alors n'hésitez pas à me contacter via le
+                  formulaire ou via mes réseaux sociaux.
+                </p>
+              </div>
             </div>
 
-            {/* Image */}
             <div>
-              <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto">
+              <div className="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
                 <Image
                   alt="about"
+                  className="w-full xl:h-[500px]"
                   height={300}
-                  layout="responsive"
-                  objectFit="cover"
-                  src={Herobg}
-                  width={500}
+                  src="/about.jpg"
+                  width={300}
                 />
               </div>
             </div>

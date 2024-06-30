@@ -2,8 +2,6 @@
 import Image from "next/image";
 import { Button } from "@nextui-org/button";
 
-import Logo from "@/app/assets/logo-transparent.png";
-
 export const Hero = () => {
   return (
     <section
@@ -14,7 +12,9 @@ export const Hero = () => {
         <Image
           alt="logo"
           className="xl:h-[450px] xl:w-[450px] md:w-[350px] md:h-[350px] 2xl:w-[600px] 2xl:h-[600px]"
-          src={Logo}
+          height={500}
+          src="/logo-transparent.png"
+          width={500}
         />
         <div className="flex flex-col justify-center  p-4">
           <h1 className="text-2xl 2xl:text-4xl p-4 font-bold text-[#345995] ">
