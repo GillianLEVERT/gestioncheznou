@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata } from "next";
+import { Lato } from "next/font/google";
 
 import { Providers } from "./providers";
 
@@ -18,13 +19,19 @@ export const metadata: Metadata = {
   },
 };
 
+const lato = Lato({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en">
+    <html suppressHydrationWarning className={lato.className} lang="en">
       <head />
       <body className="brown-light bg-gray-300 noise">
         <Providers>
