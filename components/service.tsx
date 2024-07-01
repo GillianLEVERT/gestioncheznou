@@ -48,7 +48,7 @@ export const Service = () => {
       className="relative md:h-screen h-full justify-center"
       id="service"
     >
-      <div className="absolute w-screen left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] h-full">
+      <div className="absolute w-screen left-[50%] ml-[-50.35vw]  h-full">
         <Image
           fill
           alt="service"

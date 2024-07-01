@@ -1,6 +1,7 @@
-/* eslint-disable react/no-unescaped-entities */
-import React from "react";
+import { Button } from "@nextui-org/button";
+import Link from "next/link";
 
+/* eslint-disable react/no-unescaped-entities */
 const name = "gestioncheznou.fr";
 const sct = "GestionChezNou";
 const email = "gestioncheznou@outlook.fr";
@@ -91,6 +92,11 @@ export default function Page() {
           </p>
         </section>
       </main>
+      <div className="flex justify-center">
+        <Link href="/">
+          <Button className="bg-secondary-600">Revenir l'accueil</Button>
+        </Link>
+      </div>
     </section>
   );
 }
