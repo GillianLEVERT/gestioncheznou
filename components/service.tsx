@@ -45,7 +45,7 @@ const services = [
 export const Service = () => {
   return (
     <section
-      className="relative md:h-screen h-[1900px] justify-center"
+      className="relative md:h-screen h-[1900px] xl:pt-0 pt-20 justify-center"
       id="service"
     >
       <div className="absolute w-screen left-[50%] ml-[-50.35vw]  h-full">
