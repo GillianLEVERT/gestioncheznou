@@ -17,7 +17,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div>
+    <div className="h-screen flex justify-center">
       <h2>Quelques choses n'a pas bien fonctionné.</h2>
       <button
         onClick={

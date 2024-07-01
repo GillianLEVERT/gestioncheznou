@@ -10,34 +10,3 @@ body {
   background-image: url(../app/assets/noise5.jpg);
 }
 
-/* .link-style {
-    position: relative; 
-    border-right: 2px solid #f2eae2;
-    border-bottom: 2px solid #f2eae2;
-    padding-top: 10px;  
-    padding-left: 8px;
-    border-radius: 2px;
-  }
-  
-  .link-style::before, .link-style::after {
-    content: '';
-    position: absolute;
-    background-color: #f2eae2;
-  }
-  
-
-  .link-style::before {
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: 2px;
-    background-color: #f2eae2; 
-  }
-  
-
-  .link-style::after {
-    bottom: 0;
-    left: 0;
-    width: 2px;
-    height: 20%;
-  } */

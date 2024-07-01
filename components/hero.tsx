@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
-import { Button } from "@nextui-org/button";
+import { Divider } from "@nextui-org/divider";
+import { MdMail } from "react-icons/md";
+import { FaLinkedin, FaPhoneSquare } from "react-icons/fa";
+import { Link } from "@nextui-org/link";
 
 export const Hero = () => {
   return (
@@ -17,22 +20,51 @@ export const Hero = () => {
           width={500}
         />
         <div className="flex flex-col justify-center  p-4">
-          <h1 className="text-2xl 2xl:text-4xl p-4 font-bold text-[#345995] ">
+          <h1 className="text-2xl 2xl:text-4xl p-4 font-bold text-secondary-500 drop-shadow-xl ">
             {" "}
             Une micro entreprise..
           </h1>
-          <p className="text-lg 2xl:text-2xl pl-4">
+          <p className="text-lg 2xl:text-2xl pl-4 ">
             Spécialisée dans l'assistance administrative indépendante, dédiée à
             soutenir les entrepreneurs, les petites et moyennes entreprises,
             ainsi que les professionnels libéraux dans leurs tâches
             administratives quotidiennes.
           </p>
           <p className="text-lg 2xl:text-2xl font-medium p-4">
-            Pour toute information complémentaire, je suis à votre disposition.
+            Pour toute information complémentaire, je suis à votre disposition
+            sur mes réseaux sociaux, mail et téléphone que vous retrouverez
+            ci-dessous.
           </p>
-          <Button className="w-44 ml-4 bg-[#345995] text-lg">
-            Me contacter
-          </Button>
+          <div className="flex flex-row gap-4 p-4">
+            <Link
+              className="text-black "
+              href="mailto:gestioncheznou@outlook.fr"
+            >
+              <MdMail
+                className="text-3xl hover:text-secondary-600 drop-shadow-xl "
+                title="Email"
+              />
+            </Link>
+            <Divider className="bg-secondary-500" orientation="vertical" />
+            <Link
+              className="text-black"
+              href="https://www.linkedin.com/in/nou-de-arede-a7048a21b/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <FaLinkedin
+                className="text-3xl hover:text-secondary-600 drop-shadow-xl"
+                title="Linkedin"
+              />
+            </Link>
+            <Divider className="bg-secondary-500" orientation="vertical" />
+            <Link className="text-black" href="tel:0615817045">
+              <FaPhoneSquare
+                className="text-3xl hover:text-secondary-600 drop-shadow-xl"
+                title="Téléphone"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

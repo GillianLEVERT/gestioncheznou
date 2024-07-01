@@ -44,7 +44,7 @@ export const Navbar = () => {
         />
         <NavbarItem>
           <Link
-            className="hidden sm:flex font-semibold text-2xl text-secondary-900 "
+            className="hidden sm:flex font-semibold text-2xl text-secondary-800 "
             href="/"
             title="Accueil"
           >

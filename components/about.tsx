@@ -1,17 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Link } from "@nextui-org/link";
 import Image from "next/image";
 
 export const About = () => {
   return (
     <section className="h-screen xl:h-[1000px] mt-20" id="about">
       <div className="flex justify-center items-center xl:mb-60 mb-20">
-        <div className="border-t-2 border-gray-500 w-1/2 " />
+        <div className="border-t-2 border-primary-300 w-1/2 " />
       </div>
       <div className="py-6 sm:py-8 lg:py-12">
         <div className="px-4 md:px-8">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="xl:pt-20">
-              <h1 className="mb-4 text-center text-2xl 2xl:text-4xl font-bold text-[#345995] sm:text-3xl md:mb-6 md:text-left">
+              <h1 className="mb-4 text-center text-2xl 2xl:text-4xl font-bold text-secondary-500 sm:text-3xl md:mb-6 md:text-left drop-shadow-xl">
                 Qui-suis-je ?
               </h1>
 
@@ -32,8 +33,21 @@ export const About = () => {
                 </p>
                 <p className="p-2">
                   Je suis à la recherche de nouvelles collaborations alors
-                  n'hésitez pas à me contacter via le formulaire ou via mes
-                  réseaux sociaux.
+                  n'hésitez pas à me contacter via{" "}
+                  <Link
+                    className="sm:text-lg 2xl:text-2xl text-secondary-700 font-medium"
+                    href="#contact"
+                  >
+                    le formulaire{" "}
+                  </Link>{" "}
+                  ou via{" "}
+                  <Link
+                    className="sm:text-lg 2xl:text-2xl text-secondary-700 font-medium"
+                    href="/"
+                  >
+                    {" "}
+                    mes cooordonnées.
+                  </Link>
                 </p>
               </div>
             </div>
