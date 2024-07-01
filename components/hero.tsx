@@ -27,7 +27,7 @@ export const Hero = () => {
             moyennes entreprises, ainsi que les professionnels libéraux dans
             leurs tâches administratives quotidiennes.
           </p>
-          <p className="text-lg 2xl:text-2xl font-medium p-4">
+          <p className="text-lg 2xl:text-2xl font-semibold p-4">
             Pour toute information complémentaire, je suis à votre disposition
             via mes réseaux sociaux, par e-mail et par téléphone, dont les
             coordonnées sont indiquées ci-dessous.
