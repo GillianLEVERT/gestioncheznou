@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="flex justify-between p-4 text-sm bg-primary-500 lg:text-md text-black">
+    <footer className="flex justify-between p-4 text-sm noise lg:text-md text-black">
       <p>
         Gestion chez Nou <span>| </span>
         <a className="font-bold" href="/">
