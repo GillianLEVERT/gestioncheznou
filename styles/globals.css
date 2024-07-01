@@ -10,3 +10,12 @@ body {
   background-image: url(../app/assets/noise5.jpg);
 }
 
+.navbar-custom {
+  background-image: url(../app/assets/noise5.jpg);
+}
+
+@media (min-width: 640px) {
+  .navbar-custom {
+    background-image: none;
+  }
+}

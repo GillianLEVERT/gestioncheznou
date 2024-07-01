@@ -33,7 +33,7 @@ export const Navbar = () => {
 
   return (
     <NextUINavbar
-      className="sm:bg-transparent sm:blur-background bg-gray-300 noise text-black"
+      className="sm:bg-transparent sm:backdrop-blur-md sm:backdrop-saturate-100 navbar-custom"
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={handleMenuChange}
     >
@@ -59,7 +59,7 @@ export const Navbar = () => {
       >
         <NavbarItem>
           <Link
-            className="text-secondary-600 hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
+            className="text-secondary-600 font-semibold hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
             href="#about"
           >
             A propos
@@ -67,7 +67,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-secondary-600 hover:text-secondary-700  border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
+            className="text-secondary-600 font-semibold hover:text-secondary-700  border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
             href="#service"
           >
             Services
@@ -75,7 +75,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-secondary-600 hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
+            className="text-secondary-600 font-semibold hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
             href="#contact"
           >
             Contact
