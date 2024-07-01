@@ -121,6 +121,18 @@ export const Contact = () => {
       </p>
       <div className="mx-auto mt-8 p-6 bg-gray-900 bg-opacity-15 rounded-lg shadow-xl">
         <form ref={formRef} className="space-y-4" onSubmit={onSubmit}>
+          <input
+            name="subject"
+            type="hidden"
+            value="Nouveau mail provenant du site internet."
+          />
+          <input
+            name="from_name"
+            type="hidden"
+            value="GestionchezNou site internet Ne pas répondre"
+          />
+          <input name="name" type="hidden" value="GestionChezNou" />
+
           <div>
             <label
               className="block text-lg font-medium text-gray-700"
@@ -166,8 +178,9 @@ export const Contact = () => {
               className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               id="phone"
               name="phone"
+              pattern="[0-9]{10}"
               placeholder="0611223344"
-              type="phone"
+              type="tel"
             />
           </div>
           <div>
