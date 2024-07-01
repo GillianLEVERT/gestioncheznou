@@ -44,7 +44,7 @@ export const Navbar = () => {
         />
         <NavbarItem>
           <Link
-            className="hidden sm:flex font-semibold text-2xl text-secondary-800 "
+            className="hidden sm:flex font-semibold text-2xl 2xl:text-3xl text-secondary-600 hover:text-secondary-700 "
             href="/"
             title="Accueil"
           >
@@ -59,7 +59,7 @@ export const Navbar = () => {
       >
         <NavbarItem>
           <Link
-            className="text-secondary-800 border-t-2 border-b-2 p-2 border-primary-300"
+            className="text-secondary-600 hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
             href="#about"
           >
             A propos
@@ -67,7 +67,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-secondary-800  border-t-2 border-b-2 p-2 border-primary-300"
+            className="text-secondary-600 hover:text-secondary-700  border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
             href="#service"
           >
             Services
@@ -75,7 +75,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-secondary-800  border-t-2 border-b-2 p-2 border-primary-300"
+            className="text-secondary-600 hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
             href="#contact"
           >
             Contact

@@ -1,12 +1,6 @@
 import Image from "next/image";
-import {
-  TbMoneybag,
-  TbBriefcase,
-  TbClipboardList,
-} from "react-icons/tb";
+import { TbMoneybag, TbBriefcase, TbClipboardList } from "react-icons/tb";
 import { MdOutlineHandshake } from "react-icons/md";
-
-
 
 import { ServiceCard } from "./card";
 
@@ -71,9 +65,6 @@ export const Service = () => {
         <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-600 drop-shadow-2xl ">
           Mes Services
         </h1>
-        {/* <div className="flex justify-center items-center">
-          <div className="border-t-3 border-primary-300 w-36" />
-        </div> */}
 
         <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-6 2xl:gap-16 mt-20">
           {services.map((service, index) => (
