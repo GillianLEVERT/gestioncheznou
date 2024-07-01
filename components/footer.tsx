@@ -1,8 +1,8 @@
 export const Footer = () => {
   return (
-    <footer className="flex justify-between p-4 text-sm noise lg:text-md text-black border-t-1 border-primary-300">
-      <p>
-        Gestion chez Nou <span>| </span>
+    <footer className="flex justify-between xl:gap-0 gap-10 p-4 text-sm noise lg:text-md text-black border-t-1 border-primary-300">
+      <p className="flex flex-row gap-2">
+        Gestion chez Nou <span className="hidden md:flex">| </span>
         <a className="font-bold text-secondary-700" href="/mentionslegales">
           Mentions Légales
         </a>

@@ -43,7 +43,7 @@ export const About = () => {
                   ou via{" "}
                   <Link
                     className="sm:text-lg 2xl:text-2xl text-secondary-700 font-medium"
-                    href="/"
+                    href="#coordonnees"
                   >
                     {" "}
                     mes cooordonnées.

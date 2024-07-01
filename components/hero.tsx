@@ -46,6 +46,7 @@ export const Hero = () => {
             <Link
               className="text-black"
               href="https://www.linkedin.com/in/nou-de-arede-a7048a21b/"
+              id="coordonnees"
               rel="noopener noreferrer"
               target="_blank"
             >
