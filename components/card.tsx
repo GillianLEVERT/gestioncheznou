@@ -17,7 +17,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
     <CardHeader className="flex gap-3">
       <Icon className="text-3xl text-secondary-600" />
       <div className="flex flex-col">
-        <p className="text-lg font-medium">{title}</p>
+        <p className="text-lg font-semibold">{title}</p>
       </div>
     </CardHeader>
     <Divider className="h-0.5 bg-secondary-600" />

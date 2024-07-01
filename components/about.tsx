@@ -35,14 +35,14 @@ export const About = () => {
                   Je suis à la recherche de nouvelles collaborations alors
                   n'hésitez pas à me contacter via{" "}
                   <Link
-                    className="sm:text-lg 2xl:text-2xl text-secondary-700 font-medium"
+                    className="sm:text-lg 2xl:text-2xl text-secondary-700 font-semibold"
                     href="#contact"
                   >
                     le formulaire{" "}
                   </Link>{" "}
                   ou via{" "}
                   <Link
-                    className="sm:text-lg 2xl:text-2xl text-secondary-700 font-medium"
+                    className="sm:text-lg 2xl:text-2xl text-secondary-700 font-semibold"
                     href="#coordonnees"
                   >
                     {" "}
