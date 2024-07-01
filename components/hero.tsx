@@ -22,15 +22,15 @@ export const Hero = () => {
             Une micro entreprise..
           </h1>
           <p className="text-lg 2xl:text-2xl pl-4 ">
-            Spécialisée dans l'assistance administrative indépendante, dédiée à
-            soutenir les entrepreneurs, les petites et moyennes entreprises,
-            ainsi que les professionnels libéraux dans leurs tâches
-            administratives quotidiennes.
+            Spécialisée dans l'assistance administrative indépendante, notre
+            entreprise est dédiée à soutenir les entrepreneurs, les petites et
+            moyennes entreprises, ainsi que les professionnels libéraux dans
+            leurs tâches administratives quotidiennes.
           </p>
           <p className="text-lg 2xl:text-2xl font-medium p-4">
             Pour toute information complémentaire, je suis à votre disposition
-            sur mes réseaux sociaux, mail et téléphone que vous retrouverez
-            ci-dessous.
+            via mes réseaux sociaux, par e-mail et par téléphone, dont les
+            coordonnées sont indiquées ci-dessous.
           </p>
           <div className="flex flex-row gap-4 p-4">
             <Link

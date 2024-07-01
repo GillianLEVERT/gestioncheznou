@@ -18,18 +18,18 @@ export const About = () => {
 
               <div className="mb-6 sm:text-lg 2xl:text-2xl md:mb-8">
                 <p className="p-2">
-                  J'ai créé ma micro-entreprise en juin 2023. Mais avant, j'ai
-                  occupé un poste de chargée de recouvrement et facturière
-                  pendant 7 ans dans une société de BTP.
+                  J'ai créé ma micro-entreprise en juin 2023. Avant cela, j'ai
+                  occupé un poste de chargée de recouvrement et de facturation
+                  pendant 7 ans au sein d'une société de BTP.
                 </p>
                 <p className="p-2">
-                  J'ai ensuite évoluée en tant qu'assistante commerciale au sein
-                  de cette entreprise pendant 5 ans. Ces postes m'ont permis
-                  d'acquérir diverses compétences telles que la polyvalence, la
-                  relation clientèle, la gestion commerciale et biens d'autres.
-                  Mon objectif est de vous aider à gérer vos tâches
-                  administratives afin que vous puissiez vous concentrer sur
-                  votre métier.
+                  ar la suite, j'ai évolué en tant qu'assistante commerciale au
+                  sein de cette entreprise pendant 5 ans. Ces expériences m'ont
+                  permis d'acquérir diverses compétences telles que la
+                  polyvalence, la gestion de la relation client, la gestion
+                  commerciale, et bien d'autres encore. Mon objectif est de vous
+                  aider à gérer vos tâches administratives afin que vous
+                  puissiez vous concentrer pleinement sur votre métier.
                 </p>
                 <p className="p-2">
                   Je suis à la recherche de nouvelles collaborations alors
