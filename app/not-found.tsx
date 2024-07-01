@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Button } from "@nextui-org/button";
 import { Link } from "@nextui-org/link";
 
 export default function NotFound() {
@@ -14,16 +15,15 @@ export default function NotFound() {
               Page introuvable
             </h1>
 
-            <p className="mb-12 max-w-screen-md text-center text-black md:text-lg">
+            <p className="mb-12 max-w-screen-md text-center text-gray-500 md:text-lg">
               La page que vous recherchez n'existe pas.
             </p>
 
-            <Link
-              className="inline-block rounded-lg bg-blue-700 px-8 py-3 text-center text-sm font-semibold text-black outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
-              href="/"
-            >
-              Retourner à l'acueil
-            </Link>
+            <Button className="bg-blue-700 ">
+              <Link className="text-black" href="/">
+                Retourner à l'acueil
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

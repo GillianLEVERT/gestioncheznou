@@ -44,7 +44,7 @@ export const Navbar = () => {
         />
         <NavbarItem>
           <Link
-            className="hidden sm:flex font-semibold text-2xl text-black"
+            className="hidden sm:flex font-semibold text-2xl text-secondary-900 "
             href="/"
             title="Accueil"
           >
@@ -54,38 +54,40 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex gap-8 font-medium"
+        className="hidden sm:flex gap-8 2xl:gap-16 font-medium"
         justify="center"
       >
         <NavbarItem>
-          <Link className="text-black" href="#about">
+          <Link
+            className="text-secondary-800 border-t-2 border-b-2 p-2 border-primary-300"
+            href="#about"
+          >
             A propos
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-black" href="#service">
+          <Link
+            className="text-secondary-800  border-t-2 border-b-2 p-2 border-primary-300"
+            href="#service"
+          >
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className="text-black" href="#contact">
+          <Link
+            className="text-secondary-800  border-t-2 border-b-2 p-2 border-primary-300"
+            href="#contact"
+          >
             Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="bg-gray-300 noise font-semibold gap-y-2 list-disc list-inside">
+      <NavbarMenu className="bg-gray-300 noise font-semibold gap-y-2 list-disc list-inside text-secondary-700">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link
-              className="w-full "
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                    ? "danger"
-                    : "foreground"
-              }
+              className="text-secondary-700 "
               href={item.href}
               onClick={() => handleMenuChange(false)}
             >

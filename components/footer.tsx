@@ -3,7 +3,7 @@ export const Footer = () => {
     <footer className="flex justify-between p-4 text-sm noise lg:text-md text-black">
       <p>
         Gestion chez Nou <span>| </span>
-        <a className="font-bold" href="/">
+        <a className="font-bold" href="/rgpd">
           Mentions Légales
         </a>
       </p>

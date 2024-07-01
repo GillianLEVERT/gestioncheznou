@@ -111,7 +111,7 @@ export const Contact = () => {
 
   return (
     <section className="h-screen flex items-center" id="contact">
-      <div className="mx-auto mt-8 p-6 bg-gray-500 backdrop-blur-md bg-opacity-5  rounded-lg shadow-xl">
+      <div className="mx-auto mt-8 p-6 transparent rounded-lg shadow-xl">
         <form ref={formRef} className="space-y-4" onSubmit={onSubmit}>
           <div>
             <label

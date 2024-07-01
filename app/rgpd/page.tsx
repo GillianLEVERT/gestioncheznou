@@ -1,7 +1,7 @@
-export const Page = () => {
+export default function Page() {
   return (
-    <section>
+    <section className="h-screen">
       <div>Test</div>
     </section>
   );
-};
+}
