@@ -23,7 +23,7 @@ export const About = () => {
                   pendant 7 ans au sein d'une société de BTP.
                 </p>
                 <p className="p-2">
-                  ar la suite, j'ai évolué en tant qu'assistante commerciale au
+                  Par la suite, j'ai évolué en tant qu'assistante commerciale au
                   sein de cette entreprise pendant 5 ans. Ces expériences m'ont
                   permis d'acquérir diverses compétences telles que la
                   polyvalence, la gestion de la relation client, la gestion
