@@ -11,7 +11,7 @@ export const About = () => {
       <div className="py-6 sm:py-8 lg:py-12">
         <div className="px-4 md:px-8">
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="xl:pt-20">
+            <div className="">
               <h1 className="mb-4 text-center text-2xl 2xl:text-4xl font-bold text-secondary-500 sm:text-3xl md:mb-6 md:text-left drop-shadow-xl">
                 Qui-suis-je ?
               </h1>
