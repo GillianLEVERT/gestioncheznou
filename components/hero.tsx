@@ -7,7 +7,10 @@ import { Link } from "@nextui-org/link";
 
 export const Hero = () => {
   return (
-    <section className="h-screen flex items-center pb-20" id="hero">
+    <section
+      className="h-screen flex items-center xl:mt-0 mt-20 pb-20"
+      id="hero"
+    >
       <div className="w-full flex flex-col md:flex-row 2xl:gap-x-40 xl:gap-x-10 gap-x-4 justify-center">
         <Image
           alt="logo"
