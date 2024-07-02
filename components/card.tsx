@@ -22,7 +22,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
     </CardHeader>
     <Divider className="h-0.5 bg-secondary-600" />
     <CardBody>
-      <ul className="list-disc pl-5 space-y-2 text-lg">
+      <ul className="list-disc pl-5 space-y-2 text-xl">
         {descriptionPoints.map((point, index) => (
           <li key={index}>{point}</li>
         ))}

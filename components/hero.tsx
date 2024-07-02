@@ -35,7 +35,7 @@ export const Hero = () => {
             via mes réseaux sociaux, par e-mail et par téléphone, dont les
             coordonnées sont indiquées ci-dessous.
           </p>
-          <div className="flex flex-row gap-4 p-4">
+          <div className="flex flex-row gap-4 p-4 justify-center items-center xl:justify-start  ">
             <Link
               className="text-black "
               href="mailto:gestioncheznou@outlook.fr"
