@@ -31,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning className={lato.className} lang="en">
+    <html suppressHydrationWarning className={lato.className} lang="fr">
       <head />
       <body className="brown-light bg-gray-300 noise">
         <Providers>

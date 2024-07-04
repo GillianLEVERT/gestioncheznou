@@ -8,8 +8,6 @@ import { useState, FormEvent, useRef, useCallback, useEffect } from "react";
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
-import map from "@/public/map2.png";
-
 export const Contact = () => {
   const [result, setResult] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -130,7 +128,9 @@ export const Contact = () => {
             <Image
               alt="map"
               className="inset-0 absolute h-full sm:w-full sm:object-cover overflow-x-hidden"
-              src={map}
+              height={700}
+              src="/map.png"
+              width={900}
             />
           </div>
           <div className="bg-secondary-200 relative flex flex-wrap py-6 rounded shadow-md px-4">
@@ -140,6 +140,7 @@ export const Contact = () => {
               </h2>
               <p className="mt-1 mb-2">45220 CHUELLES</p>
               <Link
+                aria-label="map"
                 className="py-4 text-xl text-secondary-700"
                 href="https://www.google.com/maps/@47.9985298,2.9667853,14.75z?entry=ttu"
                 rel="noopener noreferrer"

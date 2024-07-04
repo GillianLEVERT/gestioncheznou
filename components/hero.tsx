@@ -16,7 +16,7 @@ export const Hero = () => {
           alt="logo"
           className="xl:h-[450px] xl:w-[450px] md:w-[350px] md:h-[350px] 2xl:w-[600px] 2xl:h-[600px] noise-logo rounded-lg shadow-lg"
           height={500}
-          src="/logo-transparent.png"
+          src="/logo1.png"
           width={500}
         />
         <div className="flex flex-col justify-center  p-4">
