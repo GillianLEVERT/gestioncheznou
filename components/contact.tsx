@@ -39,7 +39,7 @@ export const Contact = () => {
       }
       resultTimeout.current = setTimeout(clearResult, 5000);
     },
-    [clearResult],
+    [clearResult]
   );
 
   const onSubmit = useCallback(
@@ -48,7 +48,7 @@ export const Contact = () => {
 
       if (!isRgpdChecked) {
         setTemporaryResult(
-          "Veuillez accepter la politique RGPD avant d'envoyer le formulaire.",
+          "Veuillez accepter la politique RGPD avant d'envoyer le formulaire."
         );
 
         return;
@@ -59,8 +59,8 @@ export const Contact = () => {
       if (now - lastSubmitTime.current < cooldownPeriod) {
         setTemporaryResult(
           `Veuillez attendre ${Math.ceil(
-            (cooldownPeriod - (now - lastSubmitTime.current)) / 1000,
-          )} secondes avant de renvoyer un message.`,
+            (cooldownPeriod - (now - lastSubmitTime.current)) / 1000
+          )} secondes avant de renvoyer un message.`
         );
 
         return;
@@ -76,7 +76,7 @@ export const Contact = () => {
 
       formData.append(
         "access_key",
-        process.env.NEXT_PUBLIC_MAILER_KEY as string,
+        process.env.NEXT_PUBLIC_MAILER_KEY as string
       );
 
       try {
@@ -100,13 +100,13 @@ export const Contact = () => {
       } catch (error) {
         console.error("Erreur lors de l'envoi du formulaire:", error);
         setTemporaryResult(
-          "Une erreur s'est produite lors de l'envoi du formulaire.",
+          "Une erreur s'est produite lors de l'envoi du formulaire."
         );
       } finally {
         setIsSubmitting(false);
       }
     },
-    [isSubmitting, setTemporaryResult, isRgpdChecked],
+    [isSubmitting, setTemporaryResult, isRgpdChecked]
   );
 
   const handleRgpdChange = (checked: boolean) => {
@@ -142,6 +142,8 @@ export const Contact = () => {
               <Link
                 className="py-4 text-xl text-secondary-700"
                 href="https://www.google.com/maps/@47.9985298,2.9667853,14.75z?entry=ttu"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 <FaMapMarkerAlt />
               </Link>
