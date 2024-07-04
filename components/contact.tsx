@@ -35,7 +35,7 @@ export const Contact = () => {
       }
       resultTimeout.current = setTimeout(clearResult, 5000);
     },
-    [clearResult],
+    [clearResult]
   );
 
   const onSubmit = useCallback(
@@ -44,7 +44,7 @@ export const Contact = () => {
 
       if (!isRgpdChecked) {
         setTemporaryResult(
-          "Veuillez accepter la politique RGPD avant d'envoyer le formulaire.",
+          "Veuillez accepter la politique RGPD avant d'envoyer le formulaire."
         );
 
         return;
@@ -55,8 +55,8 @@ export const Contact = () => {
       if (now - lastSubmitTime.current < cooldownPeriod) {
         setTemporaryResult(
           `Veuillez attendre ${Math.ceil(
-            (cooldownPeriod - (now - lastSubmitTime.current)) / 1000,
-          )} secondes avant de renvoyer un message.`,
+            (cooldownPeriod - (now - lastSubmitTime.current)) / 1000
+          )} secondes avant de renvoyer un message.`
         );
 
         return;
@@ -72,7 +72,7 @@ export const Contact = () => {
 
       formData.append(
         "access_key",
-        process.env.NEXT_PUBLIC_MAILER_KEY as string,
+        process.env.NEXT_PUBLIC_MAILER_KEY as string
       );
 
       try {
@@ -96,13 +96,13 @@ export const Contact = () => {
       } catch (error) {
         console.error("Erreur lors de l'envoi du formulaire:", error);
         setTemporaryResult(
-          "Une erreur s'est produite lors de l'envoi du formulaire.",
+          "Une erreur s'est produite lors de l'envoi du formulaire."
         );
       } finally {
         setIsSubmitting(false);
       }
     },
-    [isSubmitting, setTemporaryResult, isRgpdChecked],
+    [isSubmitting, setTemporaryResult, isRgpdChecked]
   );
 
   const handleRgpdChange = (checked: boolean) => {
@@ -117,10 +117,8 @@ export const Contact = () => {
       <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-600 drop-shadow-2xl ">
         Contact
       </h1>
-      <p className="2xl:w-1/3 xl:w-1/2 p-4 text-lg 2xl:text-xl">
-        Vous pouvez me contacter via ce formulaire. N'hésitez pas à me fournir
-        toutes les informations nécessaires pour que je puisse vous répondre
-        rapidement.
+      <p className="2xl:w-1/3 xl:w-1/2 p-4 text-lg 2xl:text-xl flex justify-center">
+        Ne perdez plus de temps et contactez moi
       </p>
       <div className="mx-auto mt-8 p-6 bg-gray-900 bg-opacity-15 rounded-lg shadow-xl">
         <form ref={formRef} className="space-y-4" onSubmit={onSubmit}>

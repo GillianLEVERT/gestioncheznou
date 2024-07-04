@@ -22,18 +22,18 @@ export const Hero = () => {
         <div className="flex flex-col justify-center  p-4">
           <h1 className="text-2xl 2xl:text-4xl p-4 font-bold text-secondary-500 drop-shadow-xl ">
             {" "}
-            Une micro entreprise..
+            Une micro entreprise.
           </h1>
           <p className="text-lg 2xl:text-2xl pl-4 ">
-            Spécialisée dans l'assistance administrative indépendante, notre
+            Spécialisée dans l'assistanat administratif, mon entreprise
             entreprise est dédiée à soutenir les entrepreneurs, les petites et
             moyennes entreprises, ainsi que les professionnels libéraux dans
             leurs tâches administratives quotidiennes.
           </p>
           <p className="text-lg 2xl:text-2xl font-semibold p-4">
             Pour toute information complémentaire, je suis à votre disposition
-            via mes réseaux sociaux, par e-mail et par téléphone, dont les
-            coordonnées sont indiquées ci-dessous.
+            via mes réseaux sociaux, par e-mail et par téléphone.
+            <p>Vous trouverez ci-dessous mes coordonnées.</p>
           </p>
           <div className="flex flex-row gap-4 p-4 justify-center items-center xl:justify-start  ">
             <Link
