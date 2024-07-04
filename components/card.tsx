@@ -13,7 +13,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
   descriptionPoints,
   icon: Icon,
 }) => (
-  <Card className="2xl:min-w-[250px] p-4 shadow-2xl 2xl:min-h-[500px] min-h-[300px] bg-gray-900 bg-opacity-15 rounded-lg backdrop-blur-lg text-black">
+  <Card className="2xl:min-w-[250px] p-4 shadow-2xl 2xl:min-h-[500px] min-h-[300px] bg-secondary-900 bg-opacity-15 rounded-lg backdrop-blur-lg text-black">
     <CardHeader className="flex gap-3">
       <Icon className="text-3xl text-secondary-700" />
       <div className="flex flex-col">
