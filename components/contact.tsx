@@ -238,7 +238,7 @@ export const Contact = () => {
             </div>
             <div>
               <Checkbox
-                color="secondary"
+                color="primary"
                 id="rgpd_check"
                 isSelected={isRgpdChecked}
                 name="rgpd_check"
