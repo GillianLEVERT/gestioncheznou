@@ -7,11 +7,15 @@ body {
 }
 
 .noise {
-  background-image: url(../app/assets/noise5.jpg);
+  background-image: url(../app/assets/noise6.jpg);
+}
+
+.noise-logo {
+  background-image: url(../app/assets/noise7.jpg);
 }
 
 .navbar-custom {
-  background-image: url(../app/assets/noise5.jpg);
+  background-image: url(../app/assets/noise6.jpg);
 }
 
 @media (min-width: 640px) {

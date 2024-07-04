@@ -62,7 +62,7 @@ export const Service = () => {
       </div>
 
       <div className="relative z-10 w-full   px-4 sm:px-6 lg:px-8 flex flex-col">
-        <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-600 drop-shadow-2xl ">
+        <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-700 drop-shadow-2xl ">
           Mes Services
         </h1>
 

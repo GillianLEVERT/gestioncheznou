@@ -44,7 +44,7 @@ export const Navbar = () => {
         />
         <NavbarItem>
           <Link
-            className="hidden sm:flex font-semibold text-2xl 2xl:text-3xl text-secondary-600 hover:text-secondary-700 "
+            className="hidden sm:flex font-semibold text-2xl 2xl:text-3xl text-[#262220] hover:text-secondary-700 "
             href="/"
             title="Accueil"
           >
@@ -59,7 +59,7 @@ export const Navbar = () => {
       >
         <NavbarItem>
           <Link
-            className="text-secondary-600 font-semibold hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
+            className="text-[#262220] font-medium hover:text-secondary-700  2xl:text-xl"
             href="#about"
           >
             A propos
@@ -67,7 +67,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-secondary-600 font-semibold hover:text-secondary-700  border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
+            className="text-[#262220] font-medium hover:text-secondary-700   2xl:text-xl"
             href="#service"
           >
             Services
@@ -75,7 +75,7 @@ export const Navbar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            className="text-secondary-600 font-semibold hover:text-secondary-700 border-t-2 border-b-2 p-2 border-primary-300 2xl:text-xl"
+            className="text-[#262220] font-medium hover:text-secondary-700  2xl:text-xl"
             href="#contact"
           >
             Contact
@@ -83,7 +83,7 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu className="bg-gray-300 noise font-semibold gap-y-2 list-disc list-inside text-secondary-700">
+      <NavbarMenu className="noise font-semibold gap-y-2 list-disc list-inside text-secondary-700">
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item.name}-${index}`}>
             <Link

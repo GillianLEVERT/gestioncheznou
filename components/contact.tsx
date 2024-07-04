@@ -39,7 +39,7 @@ export const Contact = () => {
       }
       resultTimeout.current = setTimeout(clearResult, 5000);
     },
-    [clearResult]
+    [clearResult],
   );
 
   const onSubmit = useCallback(
@@ -48,7 +48,7 @@ export const Contact = () => {
 
       if (!isRgpdChecked) {
         setTemporaryResult(
-          "Veuillez accepter la politique RGPD avant d'envoyer le formulaire."
+          "Veuillez accepter la politique RGPD avant d'envoyer le formulaire.",
         );
 
         return;
@@ -59,8 +59,8 @@ export const Contact = () => {
       if (now - lastSubmitTime.current < cooldownPeriod) {
         setTemporaryResult(
           `Veuillez attendre ${Math.ceil(
-            (cooldownPeriod - (now - lastSubmitTime.current)) / 1000
-          )} secondes avant de renvoyer un message.`
+            (cooldownPeriod - (now - lastSubmitTime.current)) / 1000,
+          )} secondes avant de renvoyer un message.`,
         );
 
         return;
@@ -76,7 +76,7 @@ export const Contact = () => {
 
       formData.append(
         "access_key",
-        process.env.NEXT_PUBLIC_MAILER_KEY as string
+        process.env.NEXT_PUBLIC_MAILER_KEY as string,
       );
 
       try {
@@ -100,13 +100,13 @@ export const Contact = () => {
       } catch (error) {
         console.error("Erreur lors de l'envoi du formulaire:", error);
         setTemporaryResult(
-          "Une erreur s'est produite lors de l'envoi du formulaire."
+          "Une erreur s'est produite lors de l'envoi du formulaire.",
         );
       } finally {
         setIsSubmitting(false);
       }
     },
-    [isSubmitting, setTemporaryResult, isRgpdChecked]
+    [isSubmitting, setTemporaryResult, isRgpdChecked],
   );
 
   const handleRgpdChange = (checked: boolean) => {
@@ -118,14 +118,14 @@ export const Contact = () => {
       className="xl:h-screen h-[1200px] flex items-center flex-col relative"
       id="contact"
     >
-      <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-600 drop-shadow-2xl ">
+      <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-700 drop-shadow-2xl ">
         Contact
       </h1>
       <div className="2xl:w-1/3 xl:w-1/2 p-4 text-lg 2xl:text-xl flex justify-center">
         Ne perdez plus de temps et contactez moi.
       </div>
       <div className="container px-5 py-20 md:mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 py-10 xl:px-10 md:px-4 px-2 flex items-end justify-start relative">
+        <div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 py-10 xl:px-10 md:px-4 px-2 flex items-end justify-start relative shadow-xl">
           <div className="absolute inset-0 sm:static">
             <Image
               alt="map"
@@ -133,14 +133,14 @@ export const Contact = () => {
               src={map}
             />
           </div>
-          <div className="bg-primary relative flex flex-wrap py-6 rounded shadow-md px-4">
+          <div className="bg-secondary-200 relative flex flex-wrap py-6 rounded shadow-md px-4">
             <div className="">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESSE
               </h2>
               <p className="mt-1 mb-2">45220 CHUELLES</p>
               <Link
-                className="py-4 text-xl text-secondary-500"
+                className="py-4 text-xl text-secondary-700"
                 href="https://www.google.com/maps/@47.9985298,2.9667853,14.75z?entry=ttu"
               >
                 <FaMapMarkerAlt />
@@ -151,8 +151,8 @@ export const Contact = () => {
                 EMAIL
               </h2>
               <Link
+                className="text-secondary-700 leading-relaxed"
                 href="mailto:gestioncheznou@outlook.fr"
-                className="text-secondary-500 leading-relaxed"
               >
                 gestioncheznou@outlook.fr
               </Link>
@@ -161,7 +161,7 @@ export const Contact = () => {
               </h2>
 
               <Link
-                className="text-secondary-500 leading-relaxed"
+                className="text-secondary-700 leading-relaxed"
                 href="tel:0615817045"
               >
                 06.15.81.70.45
@@ -193,7 +193,7 @@ export const Contact = () => {
               </label>
               <input
                 required
-                className="mt-1 block w-full px-3 py-2 bg-primary-200 border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 block w-full px-3 py-2 bg-secondary-200 border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 id="name"
                 name="name"
                 placeholder="Votre nom ou nom de société, ou les deux."
@@ -210,7 +210,7 @@ export const Contact = () => {
               </label>
               <input
                 required
-                className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 block w-full px-3 py-2 bg-secondary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 id="email"
                 name="email"
                 placeholder="votre@email.com"
@@ -226,7 +226,7 @@ export const Contact = () => {
               </label>
               <input
                 required
-                className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 block w-full px-3 py-2 bg-secondary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 id="phone"
                 name="phone"
                 pattern="[0-9]{10}"
@@ -264,7 +264,7 @@ export const Contact = () => {
               </label>
               <textarea
                 required
-                className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="mt-1 block w-full px-3 py-2 bg-secondary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 id="message"
                 name="message"
                 placeholder="Votre message"
