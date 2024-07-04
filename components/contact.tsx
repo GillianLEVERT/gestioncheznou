@@ -5,6 +5,10 @@ import { Link } from "@nextui-org/link";
 import { Button } from "@nextui-org/button";
 import { Checkbox } from "@nextui-org/checkbox";
 import { useState, FormEvent, useRef, useCallback, useEffect } from "react";
+import Image from "next/image";
+import { FaMapMarkerAlt } from "react-icons/fa";
+
+import map from "@/public/map2.png";
 
 export const Contact = () => {
   const [result, setResult] = useState("");
@@ -111,131 +115,178 @@ export const Contact = () => {
 
   return (
     <section
-      className="xl:h-screen h-[1200px] flex items-center flex-col"
+      className="xl:h-screen h-[1200px] flex items-center flex-col relative"
       id="contact"
     >
       <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-600 drop-shadow-2xl ">
         Contact
       </h1>
-      <p className="2xl:w-1/3 xl:w-1/2 p-4 text-lg 2xl:text-xl flex justify-center">
-        Ne perdez plus de temps et contactez moi
-      </p>
-      <div className="mx-auto mt-8 p-6 bg-gray-900 bg-opacity-15 rounded-lg shadow-xl">
-        <form ref={formRef} className="space-y-4" onSubmit={onSubmit}>
-          <input
-            name="subject"
-            type="hidden"
-            value="Nouveau mail provenant du site internet."
-          />
-          <input
-            name="from_name"
-            type="hidden"
-            value="GestionchezNou site internet Ne pas répondre"
-          />
-          <input name="name" type="hidden" value="GestionChezNou" />
-
-          <div>
-            <label
-              className="block text-lg font-medium text-gray-700"
-              htmlFor="name"
-            >
-              Nom ou Société
-            </label>
-            <input
-              required
-              className="mt-1 block w-full px-3 py-2 bg-primary-200 border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              id="name"
-              name="name"
-              placeholder="Votre nom ou nom de société, ou les deux."
-              type="name"
+      <div className="2xl:w-1/3 xl:w-1/2 p-4 text-lg 2xl:text-xl flex justify-center">
+        Ne perdez plus de temps et contactez moi.
+      </div>
+      <div className="container px-5 py-20 md:mx-auto flex sm:flex-nowrap flex-wrap">
+        <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 py-10 xl:px-10 md:px-4 px-2 flex items-end justify-start relative">
+          <div className="absolute inset-0 sm:static">
+            <Image
+              alt="map"
+              className="inset-0 absolute grayscale h-full sm:w-full sm:object-cover overflow-x-hidden"
+              src={map}
             />
           </div>
-
-          <div>
-            <label
-              className="block text-lg font-medium text-gray-700"
-              htmlFor="email"
-            >
-              Email
-            </label>
-            <input
-              required
-              className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              id="email"
-              name="email"
-              placeholder="votre@email.com"
-              type="email"
-            />
-          </div>
-          <div>
-            <label
-              className="block text-lg font-medium text-gray-700"
-              htmlFor="phone"
-            >
-              Téléphone
-            </label>
-            <input
-              required
-              className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              id="phone"
-              name="phone"
-              pattern="[0-9]{10}"
-              placeholder="0611223344"
-              type="tel"
-            />
-          </div>
-          <div>
-            <Checkbox
-              color="secondary"
-              id="rgpd_check"
-              isSelected={isRgpdChecked}
-              name="rgpd_check"
-              onValueChange={handleRgpdChange}
-            >
-              <label
-                className="mb-2 text-sm font-semibold text-gray-900"
-                htmlFor="rgpd_check"
+          <div className="bg-primary relative flex flex-wrap py-6 rounded shadow-md px-4">
+            <div className="">
+              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
+                ADDRESSE
+              </h2>
+              <p className="mt-1 mb-2">45220 CHUELLES</p>
+              <Link
+                className="py-4 text-xl text-secondary-500"
+                href="https://www.google.com/maps/@47.9985298,2.9667853,14.75z?entry=ttu"
               >
-                J'accepte la conservation de mes données selon notre{" "}
-                <Link className="text-secondary-700" href="/rgpd">
-                  {" "}
-                  politique RGPD
-                </Link>
-              </label>
-            </Checkbox>
-          </div>
+                <FaMapMarkerAlt />
+              </Link>
+            </div>
+            <div className="lg:w-1/2 sm:px-6  mt-4 lg:mt-0">
+              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
+                EMAIL
+              </h2>
+              <Link
+                href="mailto:gestioncheznou@outlook.fr"
+                className="text-secondary-500 leading-relaxed"
+              >
+                gestioncheznou@outlook.fr
+              </Link>
+              <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
+                PHONE
+              </h2>
 
-          <div>
-            <label
-              className="block text-sm font-medium text-gray-700"
-              htmlFor="message"
-            >
-              Message
-            </label>
-            <textarea
-              required
-              className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              id="message"
-              name="message"
-              placeholder="Votre message"
-              rows={4}
+              <Link
+                className="text-secondary-500 leading-relaxed"
+                href="tel:0615817045"
+              >
+                06.15.81.70.45
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto  p-6 ">
+          <form ref={formRef} className="space-y-4" onSubmit={onSubmit}>
+            <input
+              name="subject"
+              type="hidden"
+              value="Nouveau mail provenant du site internet."
             />
-          </div>
-          <div>
-            <Button
-              className="w-1/4 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-secondary-600 hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-offset-2  disabled:opacity-30"
-              isDisabled={isSubmitting || !isRgpdChecked}
-              type="submit"
-            >
-              {isSubmitting ? "Envoi en cours..." : "Envoyer"}
-            </Button>
-          </div>
-        </form>
-        {result && (
-          <div className="mt-4 text-center text-sm font-medium text-gray-700">
-            {result}
-          </div>
-        )}
+            <input
+              name="from_name"
+              type="hidden"
+              value="GestionchezNou site internet Ne pas répondre"
+            />
+            <input name="name" type="hidden" value="GestionChezNou" />
+
+            <div>
+              <label
+                className="block text-lg font-medium text-gray-700"
+                htmlFor="name"
+              >
+                Nom ou Société
+              </label>
+              <input
+                required
+                className="mt-1 block w-full px-3 py-2 bg-primary-200 border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                id="name"
+                name="name"
+                placeholder="Votre nom ou nom de société, ou les deux."
+                type="name"
+              />
+            </div>
+
+            <div>
+              <label
+                className="block text-lg font-medium text-gray-700"
+                htmlFor="email"
+              >
+                Email
+              </label>
+              <input
+                required
+                className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                id="email"
+                name="email"
+                placeholder="votre@email.com"
+                type="email"
+              />
+            </div>
+            <div>
+              <label
+                className="block text-lg font-medium text-gray-700"
+                htmlFor="phone"
+              >
+                Téléphone
+              </label>
+              <input
+                required
+                className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                placeholder="0611223344"
+                type="tel"
+              />
+            </div>
+            <div>
+              <Checkbox
+                color="secondary"
+                id="rgpd_check"
+                isSelected={isRgpdChecked}
+                name="rgpd_check"
+                onValueChange={handleRgpdChange}
+              >
+                <label
+                  className="mb-2 text-sm font-semibold text-gray-900"
+                  htmlFor="rgpd_check"
+                >
+                  J'accepte la conservation de mes données selon notre{" "}
+                  <Link className="text-secondary-700" href="/rgpd">
+                    {" "}
+                    politique RGPD
+                  </Link>
+                </label>
+              </Checkbox>
+            </div>
+
+            <div>
+              <label
+                className="block text-sm font-medium text-gray-700"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                required
+                className="mt-1 block w-full px-3 py-2 bg-primary-200  border border-gray-300 rounded-md shadow-sm text-black placeholder-secondary-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                id="message"
+                name="message"
+                placeholder="Votre message"
+                rows={4}
+              />
+            </div>
+            <div>
+              <Button
+                className="w-1/4 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-secondary-600 hover:bg-secondary-700 focus:outline-none focus:ring-2 focus:ring-offset-2  disabled:opacity-30"
+                isDisabled={isSubmitting || !isRgpdChecked}
+                type="submit"
+              >
+                {isSubmitting ? "Envoi en cours..." : "Envoyer"}
+              </Button>
+            </div>
+          </form>
+          {result && (
+            <div className="mt-4 text-center text-sm font-medium text-gray-700">
+              {result}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );
