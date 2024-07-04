@@ -115,7 +115,7 @@ export const Contact = () => {
 
   return (
     <section
-      className="xl:h-screen h-[1200px] flex items-center flex-col relative"
+      className="xl:h-screen h-[1400px] flex items-center flex-col relative"
       id="contact"
     >
       <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-700 drop-shadow-2xl ">
