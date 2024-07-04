@@ -13,7 +13,7 @@ export const About = () => {
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="">
               <h1 className="mb-4 text-center text-2xl 2xl:text-4xl font-bold text-secondary-700 sm:text-3xl md:mb-6 md:text-left drop-shadow-xl pl-2">
-                A propos :
+                A propos
               </h1>
 
               <div className="mb-6 sm:text-lg 2xl:text-2xl md:mb-8">
