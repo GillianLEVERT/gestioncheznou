@@ -129,7 +129,7 @@ export const Contact = () => {
           <div className="absolute inset-0 sm:static">
             <Image
               alt="map"
-              className="inset-0 absolute grayscale h-full sm:w-full sm:object-cover overflow-x-hidden"
+              className="inset-0 absolute h-full sm:w-full sm:object-cover overflow-x-hidden"
               src={map}
             />
           </div>
