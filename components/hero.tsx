@@ -8,7 +8,7 @@ import { Link } from "@nextui-org/link";
 export const Hero = () => {
   return (
     <section
-      className="xl:h-screen h-[1000px] flex items-center xl:mt-0 mt-20 pb-20"
+      className="xl:h-screen h-[1200px] flex items-center xl:mt-10 mt-20 pb-20"
       id="hero"
     >
       <div className="w-full flex flex-col md:flex-row 2xl:gap-x-40 xl:gap-x-10 gap-x-4 justify-center">
