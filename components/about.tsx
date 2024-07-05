@@ -5,7 +5,7 @@ import Image from "next/image";
 export const About = () => {
   return (
     <section
-      className="2xl:h-screen h-[1500px] 2xl:mb-0 mb-20 mt-20"
+      className="2xl:h-[1400px] h-[1500px] 2xl:mb-0 mb-20 mt-20"
       id="about"
     >
       <div className="flex justify-center items-center xl:mb-60 mb-20">
