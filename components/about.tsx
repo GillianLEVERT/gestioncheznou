@@ -56,10 +56,10 @@ export const About = () => {
             </div>
 
             <div>
-              <div className="overflow-hidden rounded-lg shadow-xl">
+              <div className="overflow-hidden flex items-center mt-10 xl:mt-0">
                 <Image
                   alt="about"
-                  className="w-full xl:h-[600px]"
+                  className="xl:w-4/5 xl:h-[600px] w-5/6 shadow-xl rounded-xl"
                   height={300}
                   src="/about.jpg"
                   width={300}

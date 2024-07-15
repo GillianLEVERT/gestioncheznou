@@ -136,7 +136,7 @@ export const Contact = () => {
           <div className="bg-secondary-200 relative flex flex-wrap py-6 rounded shadow-md px-4">
             <div className="">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                ADDRESSE
+                ADRESSE
               </h2>
               <p className="mt-1 mb-2">45220 CHUELLES</p>
               <Link
