@@ -25,10 +25,10 @@ export const Hero = () => {
             Une micro entreprise
           </h1>
           <h2 className="text-lg 2xl:text-2xl pl-4 text-[#262220] ">
-            Spécialisée dans l'assistanat administratif, mon entreprise
-            entreprise est dédiée à soutenir les entrepreneurs, les petites et
-            moyennes entreprises, ainsi que les professionnels libéraux dans
-            leurs tâches administratives quotidiennes.
+            Spécialisée dans l'assistanat administratif, mon entreprise est
+            dédiée à soutenir les entrepreneurs, les petites et moyennes
+            entreprises, ainsi que les professionnels libéraux dans leurs tâches
+            administratives quotidiennes.
           </h2>
           <h2 className="text-lg 2xl:text-2xl font-semibold p-4 text-[#262220]">
             Pour toute information complémentaire, je suis à votre disposition
