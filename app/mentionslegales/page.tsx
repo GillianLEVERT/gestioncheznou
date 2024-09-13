@@ -36,11 +36,7 @@ export default function Page() {
           <p>
             Le site est hébergé par :
             <br />
-            <strong>Nom de l'Hébergeur</strong>
-            <br />
-            Adresse : 456 Rue Hébergeur, 75002 Paris, France
-            <br />
-            Téléphone : +33 1 98 76 54 32
+            <strong>Hostinger</strong>
           </p>
         </section>
 

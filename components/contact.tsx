@@ -160,7 +160,7 @@ export const Contact = () => {
                 gestioncheznou@outlook.fr
               </Link>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                PHONE
+                TELEPHONE
               </h2>
 
               <Link
