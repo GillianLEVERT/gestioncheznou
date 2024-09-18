@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { TbMoneybag, TbBriefcase, TbClipboardList } from "react-icons/tb";
 import { MdOutlineHandshake } from "react-icons/md";
 
@@ -48,20 +47,15 @@ export const Service = () => {
       className="relative 2xl:h-[1100px] xl:h-[1000px] md:h-[1400px] h-[1800px] xl:pt-10 pt-20 justify-center"
       id="service"
     >
-      <div className="absolute w-screen left-[50%] ml-[-50.35vw]  h-full">
-        <Image
-          fill
+      <div className="absolute w-screen left-[50%] ml-[-50.35vw] h-full">
+        <img
           alt="service"
-          className="opacity-50 hidden md:flex"
-          sizes="100vw"
-          src="/service.jpg"
-          style={{
-            objectFit: "cover",
-          }}
+          className="opacity-50 hidden md:flex w-full h-full object-cover"
+          src="/service.webp"
         />
       </div>
 
-      <div className="relative z-10 w-full   px-4 sm:px-6 lg:px-8 flex flex-col">
+      <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 flex flex-col">
         <h1 className="text-4xl font-bold text-center mb-8 mt-20 text-secondary-700 drop-shadow-2xl ">
           Mes Services
         </h1>

@@ -113,7 +113,7 @@ export default function Page() {
       </main>
       <div className="flex justify-center">
         <Link href="/">
-          <Button className="bg-secondary-600">Revenir l'accueil</Button>
+          <Button className="bg-secondary-600">Revenir à l'accueil</Button>
         </Link>
       </div>
     </section>

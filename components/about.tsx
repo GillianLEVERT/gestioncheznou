@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "@nextui-org/link";
-import Image from "next/image";
 
 export const About = () => {
   return (
@@ -57,12 +56,10 @@ export const About = () => {
 
             <div>
               <div className="overflow-hidden flex items-center mt-10 xl:mt-0">
-                <Image
+                <img
                   alt="about"
                   className="xl:w-4/5 xl:h-[600px] w-5/6 shadow-xl rounded-xl"
-                  height={300}
-                  src="/about.jpg"
-                  width={300}
+                  src="/about.webp"
                 />
               </div>
             </div>

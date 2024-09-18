@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
 import { Divider } from "@nextui-org/divider";
 import { MdMail } from "react-icons/md";
 import { FaLinkedin, FaPhoneSquare } from "react-icons/fa";
@@ -12,12 +11,10 @@ export const Hero = () => {
       id="hero"
     >
       <div className="w-full flex flex-col md:flex-row 2xl:gap-x-40 xl:gap-x-10 gap-x-4 justify-center">
-        <Image
+        <img
           alt="logo"
           className="xl:h-[450px] xl:w-[450px] md:w-[350px] md:h-[350px] 2xl:w-[600px] 2xl:h-[600px] noise-logo rounded-lg shadow-lg"
-          height={500}
           src="/logo1.png"
-          width={500}
         />
         <div className="flex flex-col justify-center  p-4">
           <h1 className="text-2xl 2xl:text-4xl p-4 font-bold text-secondary-700 drop-shadow-xl ">

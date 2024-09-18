@@ -5,7 +5,6 @@ import { Link } from "@nextui-org/link";
 import { Button } from "@nextui-org/button";
 import { Checkbox } from "@nextui-org/checkbox";
 import { useState, FormEvent, useRef, useCallback, useEffect } from "react";
-import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 export const Contact = () => {
@@ -125,12 +124,10 @@ export const Contact = () => {
       <div className="container px-5 py-20 md:mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 py-10 xl:px-10 md:px-4 px-2 flex items-end justify-start relative shadow-xl">
           <div className="absolute inset-0 sm:static">
-            <Image
+            <img
               alt="map"
               className="inset-0 absolute h-full sm:w-full sm:object-cover overflow-x-hidden"
-              height={700}
-              src="/map.png"
-              width={900}
+              src="/map.webp"
             />
           </div>
           <div className="bg-secondary-200 relative flex flex-wrap py-6 rounded shadow-md px-4">
