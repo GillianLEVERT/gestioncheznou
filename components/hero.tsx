@@ -14,7 +14,7 @@ export const Hero = () => {
         <img
           alt="logo"
           className="xl:h-[450px] xl:w-[450px] md:w-[350px] md:h-[350px] 2xl:w-[600px] 2xl:h-[600px] noise-logo rounded-lg shadow-lg"
-          src="/logo1.png"
+          src="/logo1.webp"
         />
         <div className="flex flex-col justify-center  p-4">
           <h1 className="text-2xl 2xl:text-4xl p-4 font-bold text-secondary-700 drop-shadow-xl ">
